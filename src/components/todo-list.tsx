@@ -3,7 +3,7 @@ import DeleteButton from './delete-button';
 import useTodoContext from '../hooks';
 
 export default function TodoList() {
-  const { todos, handleToggleTodo, handleDeleteTodo } = useTodoContext();
+  const { todos, handleToggleTodo } = useTodoContext();
   return (
     <ul>
       {todos.length === 0 ? (

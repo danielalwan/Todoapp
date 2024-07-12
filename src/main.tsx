@@ -10,8 +10,16 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <KindeProvider
       clientId='38b9e28f2a8545c78ae45736540e3ed2'
       domain='https://daniela.kinde.com'
-      redirectUri='http://localhost:5173'
-      logoutUri='http://localhost:5173'
+      redirectUri={
+        process.env.NODE_ENV === 'production'
+          ? 'https://danis-todo-jbus8e0ku-danielas-projects-9f03aaeb.vercel.app/'
+          : 'http://localhost:5173'
+      }
+      logoutUri={
+        process.env.NODE_ENV === 'production'
+          ? 'https://danis-todo-jbus8e0ku-danielas-projects-9f03aaeb.vercel.app/'
+          : 'http://localhost:5173'
+      }
     >
       <TodoContextProvider>
         <App />

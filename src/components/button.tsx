@@ -1,6 +1,6 @@
 type ButtonProps = {
   children: React.ReactNode;
-  onClick: () => Promise<void>;
+  onClick?: () => Promise<void>;
 };
 export default function Button({ children, onClick }: ButtonProps) {
   return (

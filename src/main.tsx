@@ -12,12 +12,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       domain='https://daniela.kinde.com'
       redirectUri={
         process.env.NODE_ENV === 'production'
-          ? 'https://danis-todo-jbus8e0ku-danielas-projects-9f03aaeb.vercel.app/'
+          ? 'https://danis-todo-app.vercel.app/'
           : 'http://localhost:5173'
       }
       logoutUri={
         process.env.NODE_ENV === 'production'
-          ? 'https://danis-todo-jbus8e0ku-danielas-projects-9f03aaeb.vercel.app/'
+          ? 'https://danis-todo-app.vercel.app/'
           : 'http://localhost:5173'
       }
     >
